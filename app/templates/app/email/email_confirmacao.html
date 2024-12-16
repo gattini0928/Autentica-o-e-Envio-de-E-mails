@@ -1,0 +1,5 @@
+{% autoescape off %}
+    Olá {{user.username}}
+    Por favor, clique no link abaixo para confirmar seu e-mail
+    http://{{domain}}{% url 'ativar_email' uid=uid token=token %}
+{% endautoescape %}
